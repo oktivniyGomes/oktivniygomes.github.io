@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -26,9 +27,9 @@
     color: $title;
     padding-bottom: 1px;
     transition: all .3s;
-    @extend %quicksand-400;
+    @extend %roboto-400;
     &:hover {
-      @extend %quicksand-500;
+      @extend %roboto-700;
       color: $accent;
       border-bottom: 1px solid $accent;
     }
@@ -153,17 +154,10 @@
   }
 }
 &-form__btn{
-border: none;
-text-transform: uppercase;
-background-color: $accent;
-color: #fff;
-padding: 10px 26px;
-font-size: 16px;
-line-height: 36px;
-box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-cursor: pointer;
+@extend %btn
 }
 }
+
 .footer__bottom {
   display: flex;
   height: 75px;
@@ -174,5 +168,78 @@ cursor: pointer;
     margin-left: 25px;
     display: inline;
     vertical-align: middle;
+  }
+}
+.top-slider {
+  background-image: url(../images/top-slide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bg;
+  padding: 65px 0 44px;
+  &__container {
+    max-width: 1650px;
+  }
+  &__content {
+    padding-left: 70px;
+    padding-top: 100px;
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 670px;
+    font-size: 58px;
+    line-height: 68px;
+    color: $title;
+    @extend %roboto-700;
+    margin-bottom: 35px;
+  }
+  &__text{
+    min-width: 470px;
+    margin-bottom: 55px;
+
+  }
+  &__link {
+    @extend %btn;
+    padding: 14px 35px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    li {
+      line-height: 0;
+      margin: 0 5px;
+      button {
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $default;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+      &.slick-active{
+        button{
+        border-color: $accent;
+        &::before {
+          background-color: $accent;
+        }
+        }
+      }
+    }
   }
 }
