@@ -21,6 +21,7 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "carousel": "0.0.3",
     "main": "^1000.0.1",
     "save": "^2.4.0",
