@@ -24,6 +24,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "carousel": "0.0.3",
     "main": "^1000.0.1",
+    "rateyo": "^2.3.2",
     "save": "^2.4.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
