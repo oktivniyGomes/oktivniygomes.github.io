@@ -18,6 +18,11 @@ body {
   margin: 0 auto;
 }
 
+.top-container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
 a {
   font-size: 16px;
   line-height: 26px;
@@ -45,4 +50,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   max-width: 570px;
+}
+.header--404-error {
+  background-color: $bg;
 }
