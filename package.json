@@ -23,6 +23,8 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "carousel": "0.0.3",
+    "ion-rangeslider": "^2.3.1",
+    "jquery-form-styler": "^2.0.2",
     "main": "^1000.0.1",
     "rateyo": "^2.3.2",
     "save": "^2.4.0",

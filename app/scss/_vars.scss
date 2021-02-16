@@ -35,6 +35,25 @@ border: none;
 }
 
 
+%link {
+    text-transform: uppercase;
+    padding: 14px 27px;
+    color: $title;
+    border: 1px solid $accent;
+    display: inline-block;
+    margin-top: 55px;
+}
+
+%checkbox-hidden,
+%radio-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+
 @function max($numbers...) {
 @return m#{a}x(#{$numbers}); 
 }
