@@ -35,7 +35,7 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     vertical: true,
-    draggable: false
+    draggable: false,
   });
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
@@ -67,7 +67,7 @@ $(function () {
     $(this).addClass('shop-content__filter-btn--active');
   });
   $('.select-style').styler();
-  $('.product-one__item-input').styler();
+  $('.product-one__item-num').styler();
   $('.top-slider__inner').slick({
     arrows: false,
     dots: true,
