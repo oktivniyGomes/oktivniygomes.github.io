@@ -18,11 +18,14 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "nunjucks": "^3.2.3"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "carousel": "0.0.3",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-rename": "^2.0.0",
     "ion-rangeslider": "^2.3.1",
     "jquery-form-styler": "^2.0.2",
     "main": "^1000.0.1",

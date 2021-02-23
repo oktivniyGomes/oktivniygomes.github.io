@@ -1,0 +1,47 @@
+.fashion {
+   background-color: $bg;
+   background-image: url(../images/categories/Pattern.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   padding: 125px 0 ;
+  &__inner {
+    display: flex;
+  }
+  &__video {
+    margin-right: 65px;
+    height: 480px;
+    max-width: 535px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  &__info {
+    min-width: 570px;
+    margin-top: 80px;
+  }
+  &__subtitle{
+    color: $accent;
+    @extend %quicksand-400;
+    font-size: 22px;
+  }
+  &__title{
+    color: $title;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 10px;
+    @extend %roboto-700;
+    text-transform: uppercase;
+    margin: 25px 0 40px;
+  }
+  &__btn {
+    @extend %btn;
+    margin-top: 60px;
+    display: inline-block;
+  }
+ }
