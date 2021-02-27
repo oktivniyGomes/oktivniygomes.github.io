@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
+  flex-wrap: wrap;
   }
 }
 
@@ -31,6 +32,9 @@
     border-bottom: 1px solid $accent;
     @extend %quicksand-500
   }
+  &__btn {
+    display: none;
+  }
 }
 
 .user-nav {
@@ -54,5 +58,100 @@
     color: white;
     text-align: center;
     line-height: 20px;
+  }
+}
+@media ( max-width: 1200px) {
+  .header {
+    &__inner {
+      padding-right: 10px;
+    }
+  }
+}
+
+@media ( max-width: 860px) {
+  .menu {
+    order: 1;
+    margin-left: 40px;
+    &__list {
+      transform: translateY(-200%);
+      transition: all .3s;
+      position: absolute;
+      top: 150px;
+      width: 100%;
+      left: 0;
+      flex-direction: column;
+      z-index: 5;
+      align-items: center;
+      background-color: #fff;
+      &.menu__list--active {
+        transform: translateY(0%);
+        transition: all .3s;
+      }
+      &-item {
+        width: 100%;
+        padding: 0 35px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      &-link {
+        // width: 100%;
+        padding: 12 0px;
+        display: block;
+      }
+      &-item+.menu__list-item {
+        margin-left: 0;
+      }
+    }
+    &__btn {
+      width: 30px;
+      height: 20px;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: #29282d;
+      }
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #29282d;
+      }
+      &::after {
+        top: 0;
+      }
+      &::before {
+        bottom: 0;
+      }
+    }
+  }
+  .user-nav {
+    margin-left: auto;
+  }
+}
+
+@media ( max-width: 500px) {
+  .header {
+    &__inner {
+      padding-right: 0;
+    }
+  }
+  .menu {
+    order: 0;
+  }
+  .user-nav {
+    margin-top: 35px;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 15px;
   }
 }
